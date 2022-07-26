@@ -2,11 +2,11 @@ public class Counter {
 
   long count = 0;
 
-  public void inc() {
+  public synchronized void inc() {
       count++;
   }
 
-  public long getCount() {
+  public synchronized long getCount() {
       return count;
   }
 }
